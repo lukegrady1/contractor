@@ -1,6 +1,6 @@
 # Build Prompt
 
-**What this does:** Give this prompt to Claude Code to build a production Next.js contractor website from a Google Stitch design. It connects to the Stitch MCP, ingests the design, and outputs a fully built site with GoHighLevel lead capture, ready for Vercel deploy.
+**What this does:** Give this prompt to Claude Code to build a production Next.js websites from a Google Stitch design. It connects to the Stitch MCP, ingests the design, and outputs a fully built site with GoHighLevel lead capture, ready for Netlify deploy.
 
 **Every client-specific detail (business name, phone, email, address, service area, license, hours, stats, copy, testimonials, images) comes from the Stitch design.** The output is a template-ready site where swapping to a new client means creating a new Stitch design and running this prompt again.
 
@@ -13,7 +13,24 @@
 ## The Prompt
 
 ```
-I need you to build a production Next.js contractor website from a Google Stitch design. Follow this exact workflow:
+I need you to build a production Next.js website from a Google Stitch design. Follow this exact workflow:
+
+## CRITICAL: Folder Structure
+
+The current working directory is the project's working folder (e.g. `party-bus/`). This is NOT a git repo — it's just a workspace. Everything goes here:
+
+```
+party-bus/                    ← you are here (working directory, NOT a repo)
+├── extraction/               ← site-spec, copy, design tokens
+├── stitch-export/            ← raw HTML downloads from Stitch
+└── party-bus/                ← Next.js project (SAME NAME as parent folder)
+    ├── src/
+    ├── public/images/
+    ├── .env.local
+    └── ...                   ← this inner folder becomes the GitHub repo later
+```
+
+Use `{{PROJECT_DIR}}` as both the inner folder name AND the Next.js project name. The extraction and stitch-export go in the OUTER working directory (current directory). The Next.js scaffold goes in the inner `{{PROJECT_DIR}}/` subfolder. Download images into the inner project's `public/images/`.
 
 ## CRITICAL: Template Architecture
 
@@ -81,7 +98,7 @@ Create `./extraction/` with:
 - `extraction/copy/{screen}.md` — Verbatim copy from each screen
 - `extraction/design-tokens.json` — Colors, fonts, typography scale, spacing, radii, design notes from the Stitch design system
 
-**Download ALL images** from the Stitch screens (hosted on `lh3.googleusercontent.com/aida-public/`). Use curl to download them into `public/images/` organized by page (home/, services/, projects/, about/, kitchen/, etc.). Use the `data-alt` attributes from the HTML for proper alt text.
+**Download ALL images** from the Stitch screens (hosted on `lh3.googleusercontent.com/aida-public/`). Use curl to download them into `{{PROJECT_DIR}}/public/images/` (the inner Next.js project) organized by page (home/, services/, projects/, about/, kitchen/, etc.). Use the `data-alt` attributes from the HTML for proper alt text.
 
 Do NOT start building until site-spec.md exists and all images are downloaded.
 
@@ -207,11 +224,13 @@ NEXT_PUBLIC_GTM_ID=
 ## How to Use
 
 1. Create a new Stitch design for the client (or have one ready)
-2. Open Claude Code in an empty repo directory with the Stitch MCP connected
-3. Copy the prompt above
-4. Replace `{{BUSINESS_NAME}}` with the Stitch project name
-5. Replace `{{PROJECT_DIR}}` with the folder name (e.g. `reece-group-site`)
-6. Paste and run
+2. Create a new empty folder for the project (e.g. `party-bus/`)
+3. Open Claude Code in that folder with the Stitch MCP connected
+4. Copy the prompt above
+5. Replace `{{BUSINESS_NAME}}` with the Stitch project name
+6. Replace `{{PROJECT_DIR}}` with the folder name (same as the parent, e.g. `party-bus`)
+7. Paste and run
+8. When done, the inner `{{PROJECT_DIR}}/` folder is your Next.js project — attach it to GitHub when ready
 
 ## How to Re-skin for a New Client
 
