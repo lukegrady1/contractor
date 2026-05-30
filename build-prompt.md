@@ -221,6 +221,19 @@ npm run dev
 ```
 
 This README makes it easy to visually identify each site when browsing repos.
+
+## Phase 7: Push to GitHub
+
+After the README and hero screenshot are in place:
+
+1. Ask me for the GitHub repo URL (e.g. "What's the GitHub repo for this project?")
+2. Once I provide it, `cd` into the `{{PROJECT_DIR}}/` inner folder and run:
+   - `git init`
+   - `git remote add origin <the URL I gave you>`
+   - Stage all files (but NOT `.env.local` — make sure it's in `.gitignore`)
+   - Create an initial commit
+   - `git push -u origin main`
+3. Confirm the push succeeded and show me the repo URL
 ```
 
 ---
