@@ -203,7 +203,7 @@ After the build is complete:
    - "Please drop a `hero-preview.PNG` screenshot of the hero section into the `{{PROJECT_DIR}}/public/` folder"
    - "What's the GitHub repo URL for this project?"
 3. Once I've dropped in the screenshot and given the repo URL:
-   - Create `{{PROJECT_DIR}}/README.md` using the template below (reference the hero image from `public/hero-preview.PNG`)
+   - Create `{{PROJECT_DIR}}/README.md` using the template below (reference the hero image from `public/images/hero-preview.PNG`)
    - `cd` into the `{{PROJECT_DIR}}/` inner folder
    - `git init`
    - `git remote add origin <the URL I gave you>`
@@ -219,7 +219,7 @@ After the build is complete:
 
 > {{TAGLINE from site-config}}
 
-![Hero Section](public/hero-preview.PNG)
+![Hero Section](public/images/hero-preview.PNG)
 
 ## Stack
 - Next.js 16 (App Router, TypeScript, Tailwind v4)

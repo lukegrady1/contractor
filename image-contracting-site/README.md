@@ -2,7 +2,7 @@
 
 > Built right. Finished clean.
 
-![Hero Section](public/hero-preview.PNG)
+![Hero Section](public/images/hero-preview.PNG)
 
 ## Stack
 - Next.js 16 (App Router, TypeScript, Tailwind v4)
