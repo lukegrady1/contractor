@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Work | IMAGE CONTRACTING</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700;800&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#390c00",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#c33e00",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "outline-variant": "#c3c5d9",
+                        "on-primary-container": "#ecedff",
+                        "surface": "#f8f9fb",
+                        "primary": "#0044d3",
+                        "secondary-container": "#e1e2e8",
+                        "inverse-primary": "#b7c4ff",
+                        "on-background": "#191c1e",
+                        "background": "#f8f9fb",
+                        "inverse-on-surface": "#eff1f3",
+                        "inverse-surface": "#2e3133",
+                        "secondary-fixed-dim": "#c5c6cc",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#e1e2e8",
+                        "surface-bright": "#f8f9fb",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-secondary-fixed": "#191c20",
+                        "outline": "#737688",
+                        "on-secondary-container": "#626469",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "surface-variant": "#e1e3e5",
+                        "surface-container-low": "#f2f4f6",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#004cec",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#ffebe5",
+                        "surface-dim": "#d8dadc",
+                        "on-primary-fixed-variant": "#0039b5",
+                        "surface-container-high": "#e6e8ea",
+                        "on-surface": "#191c1e",
+                        "secondary": "#5c5e63",
+                        "primary-container": "#1e5bff",
+                        "surface-container-highest": "#e1e3e5",
+                        "tertiary": "#992f00",
+                        "on-secondary-fixed-variant": "#44474b",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#832700",
+                        "on-surface-variant": "#434656",
+                        "on-primary-fixed": "#001551",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#dce1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "4px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "display-xl": ["Archivo Narrow"],
+                        "headline-md": ["Archivo Narrow"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Archivo Narrow"],
+                        "label-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Archivo Narrow"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-xl": ["72px", {"lineHeight": "72px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                        "headline-md": ["32px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["36px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .fade-and-rise {
+            animation: fadeAndRise 0.6s ease-out forwards;
+        }
+        @keyframes fadeAndRise {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 transition-all duration-300">
+<div class="font-display-xl text-headline-md tracking-tighter text-on-background uppercase">IMAGE CONTRACTING</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Services</a>
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1 transform translateY(-2px) transition-transform" href="#">Projects</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Reviews</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="hidden lg:block font-label-md text-label-md text-on-surface hover:text-primary transition-colors" href="tel:6037161522">603-716-1522</a>
+<button class="bg-primary-container text-on-primary px-6 py-3 rounded-xl font-label-md text-label-md hover:bg-primary transition-all duration-300 transform hover:-translate-y-1">Get a Free Estimate</button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<header class="px-margin-mobile md:px-margin-desktop mb-section-gap fade-and-rise">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8">
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest block mb-4">Portfolio</span>
+<h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-on-background mb-8">OUR WORK</h1>
+</div>
+<div class="md:col-start-5 md:col-span-7">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Every structure we build is a testament to our dedication to craftsmanship. From high-end residential remodels to robust commercial infrastructures, we combine modern architectural precision with time-honored construction values. Browse our recent projects across New Hampshire.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Filterable Gallery Section -->
+<section class="px-margin-mobile md:px-margin-desktop pb-section-gap">
+<!-- Filter Bar -->
+<div class="flex flex-wrap gap-4 mb-12 items-center">
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-on-background text-background transition-all" data-category="all">All Projects</button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-secondary-container transition-all" data-category="kitchens">Kitchens</button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-secondary-container transition-all" data-category="bathrooms">Bathrooms</button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-secondary-container transition-all" data-category="additions">Additions</button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-secondary-container transition-all" data-category="roofing">Roofing</button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-secondary-container transition-all" data-category="exteriors">Exteriors</button>
+<button class="px-6 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:bg-secondary-container transition-all" data-category="commercial">Commercial</button>
+</div>
+<!-- Bento Grid Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8" id="project-grid">
+<!-- Project Card 1: Large (Kitchen) -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-white border border-outline-variant transition-all hover:-translate-y-2 hover:shadow-xl project-item" data-type="kitchens">
+<div class="aspect-[16/9] w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A luxury modern kitchen with minimalist white cabinetry, a large marble island centerpiece, and high-end stainless steel appliances. The space is illuminated by warm recessed lighting and natural sunlight streaming through large industrial-style windows. The design is clean, architectural, and reflects premium craftsmanship and high-contrast styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxFSm_MTfuqUM7JDaiIpJDgQVbYWhtAZw7EC8LNpesR4GLWZIo-17fdX4H7EYdHcDyv_TnVH8ojj9KLg1DDwotvdho6vfjmGNFotqI0ZsAVQTPER0mjWCeT9AqxsNqKfKbj_OBGhA-IiC1HK0r9IbQptBSo0giH_QFxsPy4CiwS37ky8R7NnjiQ0R-v_knd1dhCnSyJtakrMSKlnhaL3AxyW-ibYkexUU3sB_xTDaMt5-TraV_6xjE6878zh79ZV3J8rBl0pgTlBN0"/>
+</div>
+<div class="p-8">
+<span class="font-label-md text-label-md text-primary uppercase">Kitchens</span>
+<h3 class="font-headline-md text-headline-md mt-2">The Bedford Contemporary Kitchen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Full-scale renovation featuring custom millwork and smart-home integration.</p>
+</div>
+</div>
+<!-- Project Card 2: Small (Commercial) -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-white border border-outline-variant transition-all hover:-translate-y-2 hover:shadow-xl project-item" data-type="commercial">
+<div class="aspect-square w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sleek corporate office interior with glass partitions, dark steel beams, and polished concrete floors. The lighting is cold and professional, highlighting the structural integrity and modern industrial aesthetic of the space. The room feels spacious and authoritative, emphasizing the commercial construction expertise of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOD6MKhV7cnvhg_uk59yHUshUFxtGlVf15vnzJKfvt9hw6lz73yJJ6B-6HhYSwcRA1LdKcWZWgBuaJhqbQQkEb6Wp2hzPiDyG_1JYrs2oN0G3nfjvCAVPWReCAIx6ujvl8kiHcwLsZEUgnLJPO3ohlblc4f0vR-opt-l-aDXoN9YpUYETXNGMUWbdp81N2L_NTwltbk8uQOPscjFeBPLnUZwXci_LWvwAoeZot-ksySSWog1qFBN3QkJxBMXstzs49JorPy-P1x4pA"/>
+</div>
+<div class="p-8">
+<span class="font-label-md text-label-md text-primary uppercase">Commercial</span>
+<h3 class="font-headline-md text-headline-md mt-2">Apex Office Plaza</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Structural overhaul of a 12,000 sq ft workspace.</p>
+</div>
+</div>
+<!-- Project Card 3: Small (Bathroom) -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-white border border-outline-variant transition-all hover:-translate-y-2 hover:shadow-xl project-item" data-type="bathrooms">
+<div class="aspect-square w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A master bathroom spa retreat featuring a freestanding soaking tub against a backdrop of dark slate tile. Minimalist chrome fixtures and a floating oak vanity provide a high-contrast, modern feel. The lighting is soft and atmospheric, creating a sense of luxury and precision-engineered relaxation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLAx6hynkD8VLs5g6cFWv6dhsGLW2J_dBn1TcGDBdUbXLhGEt-kYG_tCIUonYKUQscwRzoKDNkRD7yvZrpG19yQS02KHn9zQQs0Na154RH7HFPAbb0aUvt4JHE98xZFe7XT1E08GbN7Q0Bre5J23WepR3XsedKBFcgXh8YtDayxfV4Ta8B_mFDla94kBJmflRyVQkQz6ieARCbrsRJcYc26fIU74i8dqC1ZmTvp2_iiwMaeiWOH2Ykz3BwqM0P5oUxJvlBZyI7uyp8"/>
+</div>
+<div class="p-8">
+<span class="font-label-md text-label-md text-primary uppercase">Bathrooms</span>
+<h3 class="font-headline-md text-headline-md mt-2">Slate &amp; Oak Master Spa</h3>
+</div>
+</div>
+<!-- Project Card 4: Small (Additions) -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-white border border-outline-variant transition-all hover:-translate-y-2 hover:shadow-xl project-item" data-type="additions">
+<div class="aspect-square w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An exterior view of a modern sunroom addition to a traditional colonial-style home. The addition features floor-to-ceiling glass walls and a dark metal roof, seamlessly blending the old with the new. The setting is a lush green landscape at dusk, with warm lights glowing from inside the transparent structure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD38cIRvdsP2MkzUlFFv31G3N-FEF-xOmkotQHscfC6L5KkvHrDESbQenAaY2DXO6c8VBuZtVz9pdmKwyaY6iQiwPzr2W3w9QeJfT7dogl6OKDkILwd8_f1ALXFpNSCqBVZ8XcNQvUVsnFefdW68vepfmmEQiltdMeM4fT2s1KONnUSQryOfCZPKGzR3Xhazk1S1VelQ9kko5y71rCUJOqV1cZg01M_SZ87D2uKfIB5lKagylkdvthDHiNwTmW3j-HX_1lC6TiApRqL"/>
+</div>
+<div class="p-8">
+<span class="font-label-md text-label-md text-primary uppercase">Additions</span>
+<h3 class="font-headline-md text-headline-md mt-2">Glass Sunroom Extension</h3>
+</div>
+</div>
+<!-- Project Card 5: Small (Roofing) -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-white border border-outline-variant transition-all hover:-translate-y-2 hover:shadow-xl project-item" data-type="roofing">
+<div class="aspect-square w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up shot of a newly installed standing seam metal roof in a deep charcoal gray. The precision of the lines and the durability of the material are the focus. The lighting is bright midday sun, casting crisp shadows that emphasize the texture and quality of the construction work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCbA52PN7NYfz2BNDVehInkGy56mGxd6XvJ3BcBwlshy3cjehyi0KlSmOc4wTHZEkPD0obEMjrad01BrQSmzycpGHiVX9ZGABqNtlZNvUc6LRMd1TutK0hogTWKvX3jRSi83ZcVGoIUtvb0RC5i81gvOMSi4H8gt28vJKRs8ykD_GF5SAm1twYorbE2IzKJeAFwuaARcTkM0yQuFR56STtOIp3LBTQUF7DoLFXpPOcYDZonqU91RRaDf9E3WiguamAJfg9i0sDGUdl"/>
+</div>
+<div class="p-8">
+<span class="font-label-md text-label-md text-primary uppercase">Roofing</span>
+<h3 class="font-headline-md text-headline-md mt-2">Charcoal Standing Seam</h3>
+</div>
+</div>
+<!-- Project Card 6: Large (Exteriors) -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-white border border-outline-variant transition-all hover:-translate-y-2 hover:shadow-xl project-item" data-type="exteriors">
+<div class="aspect-[21/9] w-full overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide architectural shot of a modern residential exterior featuring a mix of natural wood siding, dark fiber cement panels, and expansive glazing. The home sits on a manicured hill with structured landscaping. The overall aesthetic is one of grounded, high-end construction and modern structural beauty." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBULtGEbkcYaTVL8YSqq1A-KR-xobEbqIlP3unGEf4BkOIw-SR0QEqxMPjW8CxwL3ywIZw7dTmZyp8PajavBjvjTLfhrFIGpFrWhZIMuV3D_OI_W_uinGNDnQwq9J_FAPO6aNGn9CXMiVg_ZZDQ8Ey12NWF_HuRZy3JOZ0L3CEAtbLdU-uUbOG0NHjBlLPokFKQKL6jdP0v7rKp4iMNeGuVlCuk4lVd_xSsaRt5Wxr0-jn0Ph-FiiRZ--nO2vbawPpIKsw_CQmOVaIb"/>
+</div>
+<div class="p-8 grid md:grid-cols-2 gap-8 items-center">
+<div>
+<span class="font-label-md text-label-md text-primary uppercase">Exteriors</span>
+<h3 class="font-headline-md text-headline-md mt-2">The Granite Ridge Estate</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                            A total exterior renovation that transformed a 1980s colonial into a modern architectural landmark using mixed materials and sustainable building practices.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Band -->
+<section class="bg-primary-container py-section-gap px-margin-mobile md:px-margin-desktop text-white text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<!-- Decorative Grid Pattern -->
+<div class="w-full h-full" style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="font-display-xl text-headline-lg-mobile md:text-headline-lg mb-8 uppercase">Ready to Build Your Vision?</h2>
+<p class="font-body-lg text-body-lg mb-12 opacity-90">
+                    Whether it's a small remodel or a large-scale commercial project, we bring the same level of precision and care to every job. Let's discuss your next project today.
+                </p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<button class="bg-white text-primary font-label-md text-label-md px-10 py-5 rounded-xl hover:bg-opacity-90 transition-all transform hover:-translate-y-1 shadow-lg">Get a Free Estimate</button>
+<button class="bg-transparent border-2 border-white text-white font-label-md text-label-md px-10 py-5 rounded-xl hover:bg-white hover:text-primary transition-all transform hover:-translate-y-1">Call 603-716-1522</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant w-full grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap">
+<div class="md:col-span-4">
+<div class="font-display-xl text-headline-md text-on-background uppercase mb-6">IMAGE CONTRACTING</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs leading-relaxed">
+                Premium general contracting services focused on durability, precision, and structural integrity. Serving Bedford, NH and the surrounding regions with pride.
+            </p>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-label-md text-primary font-bold mb-6">Services</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Remodeling</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-label-md text-primary font-bold mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Reviews</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-md text-label-md text-primary font-bold mb-6">Connect</h4>
+<div class="flex gap-4 mb-6">
+<a class="w-10 h-10 bg-white rounded-lg flex items-center justify-center border border-outline-variant hover:border-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-primary">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 bg-white rounded-lg flex items-center justify-center border border-outline-variant hover:border-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-primary">share</span>
+</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                123 Main St, Bedford, NH 03110
+            </p>
+</div>
+<div class="md:col-span-12 pt-12 border-t border-outline-variant mt-12">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">
+                    © 2024 Image Contracting. All Rights Reserved. Licensed &amp; Insured (NH License #123456). Serving Bedford, NH and surrounding areas.
+                </p>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Gallery Filter Logic
+        const filterButtons = document.querySelectorAll('[data-category]');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+
+                // Update Active Button UI
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-on-background', 'text-background');
+                    btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+                });
+                button.classList.add('bg-on-background', 'text-background');
+                button.classList.remove('bg-surface-container', 'text-on-surface-variant');
+
+                // Filter Items
+                projectItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-type') === category) {
+                        item.classList.remove('hidden');
+                        item.classList.add('fade-and-rise');
+                    } else {
+                        item.classList.add('hidden');
+                        item.classList.remove('fade-and-rise');
+                    }
+                });
+            });
+        });
+
+        // Sticky Navbar Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md', 'py-3');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('shadow-md', 'py-3');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reviews | IMAGE CONTRACTING</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700;800&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#390c00",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#c33e00",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eceef0",
+                    "outline-variant": "#c3c5d9",
+                    "on-primary-container": "#ecedff",
+                    "surface": "#f8f9fb",
+                    "primary": "#0044d3",
+                    "secondary-container": "#e1e2e8",
+                    "inverse-primary": "#b7c4ff",
+                    "on-background": "#191c1e",
+                    "background": "#f8f9fb",
+                    "inverse-on-surface": "#eff1f3",
+                    "inverse-surface": "#2e3133",
+                    "secondary-fixed-dim": "#c5c6cc",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#e1e2e8",
+                    "surface-bright": "#f8f9fb",
+                    "tertiary-fixed": "#ffdbd0",
+                    "on-secondary-fixed": "#191c20",
+                    "outline": "#737688",
+                    "on-secondary-container": "#626469",
+                    "tertiary-fixed-dim": "#ffb59c",
+                    "surface-variant": "#e1e3e5",
+                    "surface-container-low": "#f2f4f6",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#004cec",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#ffebe5",
+                    "surface-dim": "#d8dadc",
+                    "on-primary-fixed-variant": "#0039b5",
+                    "surface-container-high": "#e6e8ea",
+                    "on-surface": "#191c1e",
+                    "secondary": "#5c5e63",
+                    "primary-container": "#1e5bff",
+                    "surface-container-highest": "#e1e3e5",
+                    "tertiary": "#992f00",
+                    "on-secondary-fixed-variant": "#44474b",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#832700",
+                    "on-surface-variant": "#434656",
+                    "on-primary-fixed": "#001551",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#dce1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "12px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "base": "4px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "display-xl": ["Archivo Narrow"],
+                    "headline-md": ["Archivo Narrow"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Archivo Narrow"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Archivo Narrow"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-xl": ["72px", {"lineHeight": "72px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "headline-md": ["32px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal-delay-1 { animation-delay: 0.1s; }
+        .reveal-delay-2 { animation-delay: 0.2s; }
+        .reveal-delay-3 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/95 dark:bg-surface/95 backdrop-blur-md border-b border-outline-variant dark:border-outline flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 transition-all duration-300">
+<div class="font-display-xl text-headline-md tracking-tighter text-on-background dark:text-on-surface uppercase">
+            IMAGE CONTRACTING
+        </div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">Projects</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">About</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1" href="#">Reviews</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="hidden lg:block font-label-md text-label-md text-on-surface-variant">603-716-1522</span>
+<button class="bg-primary-container text-on-primary px-6 py-3 rounded-xl font-label-md text-label-md hover:translate-y-[-2px] transition-transform shadow-sm">
+                Get a Free Estimate
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap">
+<!-- Header Section -->
+<header class="px-margin-mobile md:px-margin-desktop mb-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="col-span-1 md:col-span-8 fade-in-up">
+<span class="text-primary font-label-md tracking-widest uppercase mb-4 block">Client Testimonials</span>
+<h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl leading-tight mb-6">
+                        WHAT OUR <br class="hidden md:block"/> CLIENTS SAY
+                    </h1>
+</div>
+<div class="col-span-1 md:col-span-4 self-end md:text-right fade-in-up reveal-delay-1">
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Precision. Integrity. Excellence. We don't just build structures; we build relationships grounded in quality.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-label-md group" href="#">
+                        VIEW OUR GOOGLE REVIEWS 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Review Grid -->
+<section class="px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Review Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/30 hover:translate-y-[-4px] transition-all duration-300 group fade-in-up reveal-delay-1">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-body-lg text-on-surface mb-8 italic">
+                        "The kitchen remodel exceeded all our expectations. The attention to detail in the custom cabinetry was truly exceptional."
+                    </blockquote>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<p class="font-label-md text-on-surface uppercase tracking-tight">Robert Harrison</p>
+<p class="text-on-surface-variant font-body-md">Bedford, NH</p>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/30 hover:translate-y-[-4px] transition-all duration-300 fade-in-up reveal-delay-2">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-body-lg text-on-surface mb-8 italic">
+                        "Professional from start to finish. They handled our commercial office expansion with precision and finished ahead of schedule."
+                    </blockquote>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<p class="font-label-md text-on-surface uppercase tracking-tight">Sarah Jenkins</p>
+<p class="text-on-surface-variant font-body-md">Manchester, NH</p>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/30 hover:translate-y-[-4px] transition-all duration-300 fade-in-up reveal-delay-3">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-body-lg text-on-surface mb-8 italic">
+                        "Finding a contractor you can trust is hard. Image Contracting made the process easy and the results are structural perfection."
+                    </blockquote>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<p class="font-label-md text-on-surface uppercase tracking-tight">David Miller</p>
+<p class="text-on-surface-variant font-body-md">Amherst, NH</p>
+</div>
+</div>
+<!-- Review Card 4 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/30 hover:translate-y-[-4px] transition-all duration-300 fade-in-up">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-body-lg text-on-surface mb-8 italic">
+                        "Transparent pricing and high-end craftsmanship. They turned our dated basement into the focal point of our home."
+                    </blockquote>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<p class="font-label-md text-on-surface uppercase tracking-tight">Elena Rossi</p>
+<p class="text-on-surface-variant font-body-md">Nashua, NH</p>
+</div>
+</div>
+<!-- Review Card 5 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/30 hover:translate-y-[-4px] transition-all duration-300 fade-in-up reveal-delay-1">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-body-lg text-on-surface mb-8 italic">
+                        "They respected our timeline and our budget. The site was kept clean and the crew was incredibly professional every day."
+                    </blockquote>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<p class="font-label-md text-on-surface uppercase tracking-tight">Mark Stevens</p>
+<p class="text-on-surface-variant font-body-md">Bedford, NH</p>
+</div>
+</div>
+<!-- Review Card 6 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/30 hover:translate-y-[-4px] transition-all duration-300 fade-in-up reveal-delay-2">
+<div class="flex gap-1 text-primary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<blockquote class="font-body-lg text-on-surface mb-8 italic">
+                        "Incredible attention to detail on our custom home build. I would highly recommend Image Contracting for any large-scale project."
+                    </blockquote>
+<div class="mt-auto pt-6 border-t border-outline-variant/20">
+<p class="font-label-md text-on-surface uppercase tracking-tight">Jessica Thorne</p>
+<p class="text-on-surface-variant font-body-md">Londonderry, NH</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="bg-primary-container text-on-primary p-12 md:p-20 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-on-primary-container/10 skew-x-[-15deg] translate-x-20"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+<div>
+<h2 class="font-display-xl text-headline-lg-mobile md:text-headline-lg mb-6 uppercase leading-tight">
+                            READY TO START <br/> YOUR PROJECT?
+                        </h2>
+<p class="font-body-lg text-on-primary-container mb-8 max-w-lg">
+                            Join our community of satisfied homeowners and businesses. Let's discuss how we can bring your architectural vision to life.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-surface-container-low transition-colors shadow-lg">
+                                Get a Free Estimate
+                            </button>
+<button class="border-2 border-white/30 text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-white/10 transition-colors">
+                                Call 603-716-1522
+                            </button>
+</div>
+</div>
+<div class="hidden lg:block">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square bg-white/5 rounded-xl border border-white/10 flex flex-col items-center justify-center p-8 text-center">
+<span class="font-display-xl text-headline-lg mb-2">15+</span>
+<span class="font-label-md uppercase opacity-80">Years Experience</span>
+</div>
+<div class="aspect-square bg-white/5 rounded-xl border border-white/10 flex flex-col items-center justify-center p-8 text-center">
+<span class="font-display-xl text-headline-lg mb-2">500+</span>
+<span class="font-label-md uppercase opacity-80">Projects Completed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline w-full rounded-none">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap w-full">
+<div class="md:col-span-4">
+<div class="font-display-xl text-headline-md text-on-background dark:text-on-surface uppercase mb-6">
+                    IMAGE CONTRACTING
+                </div>
+<p class="text-on-surface-variant font-body-md mb-8 max-w-sm">
+                    Premium general contracting serving New Hampshire with a commitment to structural integrity and modern architectural aesthetics.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined">thumb_up</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-label-md text-on-surface uppercase mb-6">Services</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Remodeling</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-label-md text-on-surface uppercase mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="text-primary font-bold" href="#">Reviews</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-md text-label-md text-on-surface uppercase mb-6">Contact Us</h4>
+<p class="text-on-surface-variant font-body-md mb-2">123 Construction Way</p>
+<p class="text-on-surface-variant font-body-md mb-6">Bedford, NH 03110</p>
+<a class="text-headline-md font-display-xl text-primary block mb-2" href="tel:6037161522">603-716-1522</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="mailto:info@imagecontracting.com">info@imagecontracting.com</a>
+</div>
+<div class="col-span-full border-t border-outline-variant/30 mt-12 pt-8">
+<p class="text-on-surface-variant font-body-md text-sm text-center">
+                    © 2024 Image Contracting. All Rights Reserved. Licensed &amp; Insured (NH License #123456). Serving Bedford, NH and surrounding areas.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('py-2', 'shadow-md');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('py-2', 'shadow-md');
+                nav.classList.add('py-4');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700;800&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#390c00",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#c33e00",
+                    "primary-fixed-dim": "#b7c4ff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eceef0",
+                    "outline-variant": "#c3c5d9",
+                    "on-primary-container": "#ecedff",
+                    "surface": "#f8f9fb",
+                    "primary": "#0044d3",
+                    "secondary-container": "#e1e2e8",
+                    "inverse-primary": "#b7c4ff",
+                    "on-background": "#191c1e",
+                    "background": "#f8f9fb",
+                    "inverse-on-surface": "#eff1f3",
+                    "inverse-surface": "#2e3133",
+                    "secondary-fixed-dim": "#c5c6cc",
+                    "secondary-fixed": "#e1e2e8",
+                    "surface-bright": "#f8f9fb",
+                    "tertiary-fixed": "#ffdbd0",
+                    "on-secondary-fixed": "#191c20",
+                    "outline": "#737688",
+                    "on-secondary-container": "#626469",
+                    "tertiary-fixed-dim": "#ffb59c",
+                    "surface-variant": "#e1e3e5",
+                    "surface-container-low": "#f2f4f6",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#004cec",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#ffebe5",
+                    "surface-dim": "#d8dadc",
+                    "on-primary-fixed-variant": "#0039b5",
+                    "surface-container-high": "#e6e8ea",
+                    "on-surface": "#191c1e",
+                    "secondary": "#5c5e63",
+                    "primary-container": "#1e5bff",
+                    "surface-container-highest": "#e1e3e5",
+                    "tertiary": "#992f00",
+                    "on-secondary-fixed-variant": "#44474b",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#832700",
+                    "on-surface-variant": "#434656",
+                    "on-primary-fixed": "#001551",
+                    "on-primary": "#ffffff",
+                    "primary-fixed": "#dce1ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "base": "4px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "display-xl": ["Archivo Narrow"],
+                    "headline-md": ["Archivo Narrow"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "headline-lg-mobile": ["Archivo Narrow"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Archivo Narrow"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-xl": ["72px", {"lineHeight": "72px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                    "headline-md": ["32px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["36px", {"lineHeight": "400px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fade-rise {
+            animation: fadeRise 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        @keyframes fadeRise {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/95 dark:bg-surface/95 backdrop-blur-md border-b border-outline-variant dark:border-outline transition-all duration-300">
+<div class="flex justify-between items-center px-margin-desktop py-4 w-full">
+<div class="font-display-xl text-headline-md tracking-tighter text-on-background dark:text-on-surface uppercase">IMAGE CONTRACTING</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all duration-300" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all duration-300" href="#">Projects</a>
+<a class="font-body-md text-body-md text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all duration-300" href="#">Reviews</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="hidden lg:block font-label-md text-label-md text-on-surface font-bold">603-716-1522</span>
+<button class="bg-primary-container text-on-primary px-6 py-3 rounded-xl font-label-md text-label-md font-bold hover:translate-y-[-2px] transition-transform duration-300">Get a Free Estimate</button>
+</div>
+</div>
+</nav>
+<main class="mt-[84px]">
+<!-- Hero Section -->
+<section class="px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 fade-rise" style="animation-delay: 0.1s;">
+<h1 class="font-display-xl text-[64px] md:text-display-xl mb-8 uppercase text-on-background leading-none">Built on <br/><span class="text-primary">Trust</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    For over 15 years, Image Contracting has been the structural backbone of New Hampshire's most ambitious residential and commercial projects. We don't just build structures; we build enduring relationships based on transparency, precision, and an uncompromising standard of quality.
+                </p>
+</div>
+<div class="md:col-span-5 relative mt-12 md:mt-0 fade-rise" style="animation-delay: 0.3s;">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-xl border border-outline-variant">
+<img alt="Founder" class="w-full h-full object-cover grayscale-[0.2] hover:scale-105 transition-transform duration-700" data-alt="A professional construction site foreman in a clean white hardhat and high-visibility vest standing confidently in front of a modern architectural framework. The lighting is crisp morning sun, highlighting the steel and concrete textures. The style is premium, clean, and professional, reflecting the high-contrast brand identity of Image Contracting with deep blues and neutral greys." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlSUwtozWP64-zsX6XEoXlN2n34jShlpQY9kQoYlC3to5VvftZmtotalkMI0i0S7dOoaZ7OSxPM3evBUFgcXiy_RTnjK9iD0BlzHDIJoPk5rvW1aZjHsiPYj898wy3peS_NF6arfV4myRm7rXyHgMOCc9oG_C2N5wPt3gdFNzwedXqo1DJrv-BwvMwAw6EGPbNcX8mfies2eknfwcI301LTl1DzSFpXq9aOT36ZmmYPhcnSFzRXQxbXuhCvqcC7uCc7d8Nu3pmuzP9"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary-container text-on-primary p-8 rounded-xl hidden lg:block shadow-xl">
+<div class="font-display-xl text-headline-lg leading-none">15+</div>
+<div class="font-label-md uppercase tracking-widest opacity-80">Years of Excellence</div>
+</div>
+</div>
+</section>
+<!-- Company Story / Asymmetric Layout -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-start-2 md:col-span-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+<div class="fade-rise" style="animation-delay: 0.2s;">
+<h2 class="font-headline-lg text-headline-lg mb-6 uppercase">The Image Standard</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Founded in Bedford, NH, Image Contracting began with a single truck and a simple philosophy: if you do it right the first time, your reputation will do the selling for you. Today, we manage multi-million dollar remodeling projects and commercial developments, but that core philosophy remains unchanged. 
+                            </p>
+</div>
+<div class="md:mt-24 fade-rise" style="animation-delay: 0.4s;">
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                                We believe in "clean-site" protocols and radical transparency. Every client receives a detailed project timeline and a dedicated site manager. When we say we'll be there at 7:00 AM, our boots are on the ground at 6:55 AM.
+                            </p>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Bento Grid -->
+<section class="px-margin-desktop py-section-gap">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg uppercase mb-2">Our Core Values</h2>
+<div class="h-1 w-12 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Quality -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:translate-y-[-4px] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-weight="fill">verified</span>
+<h3 class="font-headline-md text-headline-md mb-4 uppercase">Quality</h3>
+<p class="text-on-surface-variant">Architectural precision in every joint. We use premium materials that are built to withstand the New England climate for decades.</p>
+</div>
+<!-- Communication -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:translate-y-[-4px] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-weight="fill">forum</span>
+<h3 class="font-headline-md text-headline-md mb-4 uppercase">Communication</h3>
+<p class="text-on-surface-variant">No dark periods. We provide weekly video updates and a direct line to your project lead 24/7.</p>
+</div>
+<!-- Cleanliness -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:translate-y-[-4px] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-weight="fill">cleaning_services</span>
+<h3 class="font-headline-md text-headline-md mb-4 uppercase">Cleanliness</h3>
+<p class="text-on-surface-variant">The "Invisible Contractor" rule. Your property is swept and secured at the end of every single work day.</p>
+</div>
+<!-- Warranty -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:translate-y-[-4px] transition-transform duration-300">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-weight="fill">security</span>
+<h3 class="font-headline-md text-headline-md mb-4 uppercase">Warranty</h3>
+<p class="text-on-surface-variant">Peace of mind guaranteed. We offer a 10-year structural warranty on all major remodeling and construction.</p>
+</div>
+</div>
+</section>
+<!-- Credentials Section -->
+<section class="bg-inverse-surface text-inverse-on-surface py-section-gap overflow-hidden">
+<div class="px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-5">
+<h2 class="font-display-xl text-headline-lg uppercase mb-8">Verified <br/>Authority</h2>
+<ul class="space-y-6">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span class="font-label-md text-label-md uppercase tracking-widest">NH License #123456</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span class="font-label-md text-label-md uppercase tracking-widest">Fully Insured &amp; Bonded ($2M)</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary-fixed">check_circle</span>
+<span class="font-label-md text-label-md uppercase tracking-widest">A+ BBB Accredited</span>
+</li>
+</ul>
+<div class="mt-12 p-8 border border-outline/30 rounded-xl bg-surface-container/10">
+<h4 class="font-label-md text-primary-fixed uppercase mb-2">Service Area</h4>
+<p class="text-body-md opacity-80">Serving Bedford, Manchester, Nashua, Concord, and the Seacoast region of New Hampshire.</p>
+</div>
+</div>
+<div class="md:col-span-7 mt-12 md:mt-0">
+<div class="aspect-video w-full rounded-xl overflow-hidden grayscale contrast-125 border border-outline/50 shadow-2xl relative">
+<img alt="Service Area Map" class="w-full h-full object-cover" data-alt="A stylized, architectural map of Southern New Hampshire focusing on the Bedford area. The map is rendered in high-contrast monochrome with cobalt blue highlights indicating primary service zones. The style is modern industrial, reminiscent of a blueprint, perfectly matching the professional and grounded aesthetic of a premium contracting firm." data-location="Bedford, NH" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7wwPy_qTY3E7bUktTJQ79amH7BHiSnklipTwyHq0J84bLyD46589IuIX5NpDybJbmSLXOmJcVG7IbxZFWGH7yoItdbJeBLhDgVdP1wWd3F5qhkL0BodP8jkp5hx_3jx6vI7BXcolTkC8j-6UzYGwOWdIzAbtM-1qEp5wN_tIv1ETGWjFsRFClsi5OD2pEmPdFMJtBvjnet6VOtzUUSQsB7w_o1PWbb4xuTH-bv2KGvunGZ3PTOf954OgLcvRVTKp5yj2vf0KffR7d"/>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Band -->
+<section class="px-margin-desktop py-24 flex flex-col md:flex-row justify-between items-center gap-8 bg-surface">
+<div>
+<h2 class="font-headline-lg text-headline-lg uppercase leading-tight">Ready to build <br/>something permanent?</h2>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary-container text-on-primary px-10 py-5 rounded-xl font-label-md text-label-md font-bold uppercase tracking-widest shadow-lg hover:translate-y-[-4px] transition-all">Get a Free Estimate</button>
+<button class="border-2 border-on-surface px-10 py-5 rounded-xl font-label-md text-label-md font-bold uppercase tracking-widest hover:bg-on-surface hover:text-surface transition-all">Call 603-716-1522</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap w-full">
+<div class="md:col-span-4">
+<div class="font-display-xl text-headline-md text-on-background dark:text-on-surface uppercase mb-6">IMAGE CONTRACTING</div>
+<p class="text-on-surface-variant max-w-sm mb-8">
+                    The premium standard in New Hampshire contracting. Precision, integrity, and structural excellence since 2009.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">social_leaderboard</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">photo_camera</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-80 transition-opacity">business</span>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-label-md font-bold uppercase mb-6 text-on-background">Services</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Residential</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Commercial</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Remodeling</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-md text-label-md font-bold uppercase mb-6 text-on-background">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-primary dark:text-primary-fixed font-bold" href="#">About Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Reviews</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-md text-label-md font-bold uppercase mb-6 text-on-background">Connect</h4>
+<p class="text-on-surface-variant mb-4">603-716-1522</p>
+<p class="text-on-surface-variant mb-4">info@imagecontracting.com</p>
+<p class="text-on-surface-variant">Bedford, New Hampshire 03110</p>
+</div>
+<div class="md:col-span-12 mt-12 pt-12 border-t border-outline-variant text-on-surface-variant text-sm">
+                © 2024 Image Contracting. All Rights Reserved. Licensed &amp; Insured (NH License #123456). Serving Bedford, NH and surrounding areas.
+                <a class="ml-4 hover:text-primary" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for Fade-In effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-rise');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(div => {
+            observer.observe(div);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+                nav.querySelector('div').classList.remove('py-4');
+                nav.querySelector('div').classList.add('py-3');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.querySelector('div').classList.add('py-4');
+                nav.querySelector('div').classList.remove('py-3');
+            }
+        });
+    </script>
+</body></html>

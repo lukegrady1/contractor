@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Primary palette */
+  --color-primary: #0044d3;
+  --color-primary-container: #1e5bff;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #ecedff;
+  --color-inverse-primary: #b7c4ff;
+
+  /* Secondary */
+  --color-secondary: #5c5e63;
+  --color-secondary-container: #e1e2e8;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #626469;
+
+  /* Tertiary */
+  --color-tertiary: #992f00;
+  --color-tertiary-container: #c33e00;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #ffebe5;
+
+  /* Surface */
+  --color-surface: #f8f9fb;
+  --color-surface-dim: #d8dadc;
+  --color-surface-bright: #f8f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e1e3e5;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #434656;
+  --color-inverse-surface: #2e3133;
+  --color-inverse-on-surface: #eff1f3;
+
+  /* Outline */
+  --color-outline: #737688;
+  --color-outline-variant: #c3c5d9;
+
+  /* Error */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+
+  /* Semantic */
+  --color-cobalt: #1e5bff;
+  --color-obsidian: #1a1d21;
+  --color-concrete: #edeff1;
+
+  /* Fonts */
+  --font-headline: var(--font-archivo-narrow);
+  --font-body: var(--font-hanken-grotesk);
+
+  /* Radii */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+}
+
+::selection {
+  background-color: var(--color-primary-container);
+  color: var(--color-on-primary-container);
+}
+
+/* Reveal animation for scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}

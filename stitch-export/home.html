@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IMAGE CONTRACTING | Built Right. Finished Clean.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700;800&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed": "#390c00",
+                "on-error": "#ffffff",
+                "tertiary-container": "#c33e00",
+                "primary-fixed-dim": "#b7c4ff",
+                "surface-container-lowest": "#ffffff",
+                "surface-container": "#eceef0",
+                "outline-variant": "#c3c5d9",
+                "on-primary-container": "#ecedff",
+                "surface": "#f8f9fb",
+                "primary": "#0044d3",
+                "secondary-container": "#e1e2e8",
+                "inverse-primary": "#b7c4ff",
+                "on-background": "#191c1e",
+                "background": "#f8f9fb",
+                "inverse-on-surface": "#eff1f3",
+                "inverse-surface": "#2e3133",
+                "secondary-fixed-dim": "#c5c6cc",
+                "error-container": "#ffdad6",
+                "secondary-fixed": "#e1e2e8",
+                "surface-bright": "#f8f9fb",
+                "tertiary-fixed": "#ffdbd0",
+                "on-secondary-fixed": "#191c20",
+                "outline": "#737688",
+                "on-secondary-container": "#626469",
+                "tertiary-fixed-dim": "#ffb59c",
+                "surface-variant": "#e1e3e5",
+                "surface-container-low": "#f2f4f6",
+                "error": "#ba1a1a",
+                "surface-tint": "#004cec",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-container": "#ffebe5",
+                "surface-dim": "#d8dadc",
+                "on-primary-fixed-variant": "#0039b5",
+                "surface-container-high": "#e6e8ea",
+                "on-surface": "#191c1e",
+                "secondary": "#5c5e63",
+                "primary-container": "#1e5bff",
+                "surface-container-highest": "#e1e3e5",
+                "tertiary": "#992f00",
+                "on-secondary-fixed-variant": "#44474b",
+                "on-error-container": "#93000a",
+                "on-secondary": "#ffffff",
+                "on-tertiary-fixed-variant": "#832700",
+                "on-surface-variant": "#434656",
+                "on-primary-fixed": "#001551",
+                "on-primary": "#ffffff",
+                "primary-fixed": "#dce1ff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "gutter": "24px",
+                "base": "4px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px",
+                "section-gap": "120px"
+            },
+            "fontFamily": {
+                "body-md": ["Hanken Grotesk"],
+                "display-xl": ["Archivo Narrow"],
+                "headline-md": ["Archivo Narrow"],
+                "body-lg": ["Hanken Grotesk"],
+                "headline-lg-mobile": ["Archivo Narrow"],
+                "label-md": ["Hanken Grotesk"],
+                "headline-lg": ["Archivo Narrow"]
+            },
+            "fontSize": {
+                "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                "display-xl": ["72px", {"lineHeight": "72px", "letterSpacing": "-0.04em", "fontWeight": "800"}],
+                "headline-md": ["32px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "headline-lg-mobile": ["36px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant flex justify-between items-center px-4 md:px-margin-desktop py-4">
+<div class="font-display-xl text-headline-md tracking-tighter text-on-background uppercase">IMAGE CONTRACTING</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-primary border-b-2 border-primary pb-1" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Projects</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">About</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Reviews</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-300" href="#">Contact</a>
+</div>
+<div class="flex gap-4 items-center">
+<a class="hidden lg:block font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="tel:6037161522">603-716-1522</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-xl font-label-md text-label-md hover:translate-y-[-2px] transition-transform shadow-sm">Get a Free Estimate</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Asymmetric Split -->
+<section class="min-h-[819px] flex flex-col md:grid md:grid-cols-12 items-center px-4 md:px-margin-desktop py-12 gap-gutter overflow-hidden">
+<div class="md:col-span-6 lg:col-span-5 flex flex-col gap-8 reveal active">
+<div class="flex flex-col gap-4">
+<h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-on-background leading-tight">
+                        Built right.<br/>Finished clean.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        Full-service remodeling and contracting for homes across Bedford, New Hampshire and the surrounding area.
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-label-md text-body-md hover:translate-y-[-4px] transition-all shadow-md">Get a Free Estimate</button>
+<button class="border-2 border-on-background text-on-background px-8 py-4 rounded-xl font-label-md text-body-md hover:bg-on-background hover:text-white transition-all">Call 603-716-1522</button>
+</div>
+<div class="flex items-center gap-2 pt-4 border-t border-outline-variant">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<p class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant">Licensed and insured. 15+ years.</p>
+</div>
+</div>
+<div class="md:col-span-6 lg:col-span-7 relative h-[400px] md:h-[600px] w-full reveal active" style="transition-delay: 200ms;">
+<div class="absolute inset-0 bg-secondary-container rounded-2xl overflow-hidden shadow-xl transform md:rotate-2">
+<img alt="Luxury Kitchen Renovation" class="w-full h-full object-cover" data-alt="A professional high-end photography shot of a modern, luxury residential kitchen featuring sleek white cabinetry, a large marble island, and warm wood accents. The lighting is soft and bright, highlighting the clean lines and premium finishes of a high-contrast modern industrial aesthetic. The atmosphere is upscale, demonstrating expert craftsmanship and professional contracting excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAANb8Ivjk129GMk7yS7U1VY3fhKoqtZqwsE4oQKrVgOOau0VOzXBEaOJcVY3UXtrbY4j5ZGLPw3Nb1A5k4WrFd2xHgSIx_6ftWPV7IcmQvt-dGYhi3sXzNnvjsxgTvi1Vmkcq6qJoMULRueRbkAoaUKAKw2VgLkwUOPfvE3Htij_F6Tyxp89Sdzao6--8l9h7m2QLYuN8lkHrtDg6UKys-etuCXwN-XY3Es3mPUltUiK7K8y7FquoyQqQ9rTBptC0QVf3cABioNH2x"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-outline-variant hidden lg:block">
+<p class="font-headline-md text-headline-md text-primary">100%</p>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase">Satisfaction Guarantee</p>
+</div>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="bg-surface-container py-12 px-4 md:px-margin-desktop">
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-headline-md">gavel</span>
+<span class="font-label-md text-label-md uppercase">Licensed</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-headline-md">security</span>
+<span class="font-label-md text-label-md uppercase">Insured</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-headline-md">history</span>
+<span class="font-label-md text-label-md uppercase">15+ Years</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-headline-md">task_alt</span>
+<span class="font-label-md text-label-md uppercase">500+ Projects</span>
+</div>
+<div class="flex flex-col items-center gap-1 col-span-2 md:col-span-1">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md uppercase">5-Star Rated</span>
+</div>
+</div>
+</section>
+<!-- Services Overview: Bento Grid -->
+<section class="py-section-gap px-4 md:px-margin-desktop">
+<div class="flex flex-col gap-4 mb-16">
+<span class="font-label-md text-label-md text-primary uppercase tracking-[0.2em]">Our Expertise</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Comprehensive Contracting Services</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Featured Tile -->
+<div class="md:col-span-8 bg-white border border-outline-variant rounded-xl p-8 md:p-12 flex flex-col justify-between group hover:border-primary transition-all duration-300 reveal">
+<div class="flex flex-col gap-6 max-w-xl">
+<span class="material-symbols-outlined text-display-xl text-primary">foundation</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Whole Home Remodeling</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Transform your entire living space with our structural expertise. From gut renovations to layout reconfigurations, we handle every detail with architectural precision and a focus on clean, modern design.</p>
+</div>
+<div class="mt-12 flex items-center gap-2 text-primary font-label-md uppercase group-hover:gap-4 transition-all">
+<span>View Portfolio</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+<!-- Smaller Tiles -->
+<div class="md:col-span-4 bg-surface-container-low border border-outline-variant rounded-xl p-8 flex flex-col gap-4 hover:border-primary transition-all reveal" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-headline-lg text-primary">kitchen</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Kitchens</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Gourmet spaces built for functionality and high-end aesthetics.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-low border border-outline-variant rounded-xl p-8 flex flex-col gap-4 hover:border-primary transition-all reveal" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-headline-lg text-primary">bathtub</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Bathrooms</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Spa-like retreats with custom tiling and premium fixtures.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-low border border-outline-variant rounded-xl p-8 flex flex-col gap-4 hover:border-primary transition-all reveal" style="transition-delay: 300ms;">
+<span class="material-symbols-outlined text-headline-lg text-primary">apartment</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Additions</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Seamlessly expanding your home's footprint and value.</p>
+</div>
+<div class="md:col-span-4 bg-primary text-white border border-transparent rounded-xl p-8 flex flex-col justify-center items-center text-center gap-6 reveal" style="transition-delay: 400ms;">
+<p class="font-headline-md text-headline-md">Ready to start?</p>
+<button class="bg-white text-primary px-6 py-3 rounded-lg font-label-md uppercase hover:bg-surface-container-lowest transition-colors">See all services</button>
+</div>
+</div>
+</section>
+<!-- Why Image Contracting -->
+<section class="bg-on-background text-white py-section-gap px-4 md:px-margin-desktop overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/3 flex flex-col gap-6 reveal">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg leading-tight">The Image Standard</h2>
+<p class="font-body-lg text-body-lg text-surface-variant">We believe construction shouldn't be chaotic. Our refined process ensures your home remains a sanctuary even during transformation.</p>
+</div>
+<div class="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-12">
+<div class="flex flex-col gap-4 reveal" style="transition-delay: 100ms;">
+<div class="w-12 h-1 border-t-2 border-primary"></div>
+<h4 class="font-headline-md text-headline-md">On-Time</h4>
+<p class="font-body-md text-surface-variant">We treat your deadlines as sacred. Our project management ensures teams are on-site and on-schedule, every single day.</p>
+</div>
+<div class="flex flex-col gap-4 reveal" style="transition-delay: 200ms;">
+<div class="w-12 h-1 border-t-2 border-primary"></div>
+<h4 class="font-headline-md text-headline-md">Transparent Pricing</h4>
+<p class="font-body-md text-surface-variant">No hidden fees or "surprise" costs. Our detailed estimates provide a clear roadmap of your investment before we break ground.</p>
+</div>
+<div class="flex flex-col gap-4 reveal" style="transition-delay: 300ms;">
+<div class="w-12 h-1 border-t-2 border-primary"></div>
+<h4 class="font-headline-md text-headline-md">Clean Job Sites</h4>
+<p class="font-body-md text-surface-variant">Our name is Image for a reason. We maintain tidy, organized work zones that minimize disruption to your daily life.</p>
+</div>
+<div class="flex flex-col gap-4 reveal" style="transition-delay: 400ms;">
+<div class="w-12 h-1 border-t-2 border-primary"></div>
+<h4 class="font-headline-md text-headline-md">Warrantied Work</h4>
+<p class="font-body-md text-surface-variant">We stand by our craftsmanship. Every project is backed by a comprehensive warranty for total peace of mind.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects Gallery -->
+<section class="py-section-gap px-4 md:px-margin-desktop bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-primary uppercase tracking-[0.2em]">Our Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Crafting excellence in every detail.</h2>
+</div>
+<a class="font-label-md text-label-md uppercase border-b-2 border-on-background pb-1 hover:text-primary hover:border-primary transition-all" href="#">View All Projects</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="group cursor-pointer reveal">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container mb-4">
+<img alt="Modern Bathroom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A detailed, close-up photograph of a luxury master bathroom renovation featuring dark charcoal hexagonal floor tiles, a floating light oak vanity, and matte black fixtures. The lighting is focused and warm, creating an intimate, high-end spa ambiance. The design is minimalist and modern industrial, highlighting precise tile work and sophisticated hardware choices." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXOCdlAO7Rcrf9GCKRAO9EJnalVcO4Yu8t5suHMJ2h4YlEsNFxupB2wDUrEFZm3CbX5p_Dwj4ArMWNcMJMoHKcoi8GAvo8WvL29cQDTZ-F1Y2srf-hT7cIN2UICoaz-XppcctRUmZ0tiUEVf-fO7AOk1fM4NCtUgBxfROshEyz4R9Kqil1_JE_2s5mXVH4dUWFZe_aL4cu82gtgBhS01X8hqvcPuvuACmQdAnYspqx6IMBO_JfyARYKNHUjW9KgnBv5kBjUEZJXT9g"/>
+</div>
+<h5 class="font-label-md text-label-md uppercase text-on-surface-variant">Bedford, NH</h5>
+<p class="font-headline-md text-[24px] text-on-surface">Minimalist Master Bath</p>
+</div>
+<div class="group cursor-pointer reveal" style="transition-delay: 100ms;">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container mb-4">
+<img alt="Luxury Living Room" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="An expansive living room renovation featuring vaulted ceilings with exposed dark wood beams and large floor-to-ceiling windows that flood the space with natural light. The interior is styled with premium neutral furniture and a grand stone fireplace. The aesthetic is grounded and architectural, showcasing structural integrity and high-contrast professional design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKIR3bo4lsB93vl_NbsKhtU_HH3JzLzMtiSP0PKY39Eh2Wy4m81fdSCF6jReE6aV-Feuf1PvNI3nmox7nteCvQIjzN6KQQUPD4aBYY55ZMQ0Y_jL5AN7qC6VoxU1E49qKoN3bH0tXmEipVJCNI1sTpFATgOuym_B7iPDcJyzWTKVEUulD0aYRjZKC1xmJBm7cIBwVcS6YASauLXtR8JyUsUL-FqdeqHujb8D4WYJ4fA5qvIPwAt89TL1FE865eYh71rG7zPfS1Lffu"/>
+</div>
+<h5 class="font-label-md text-label-md uppercase text-on-surface-variant">Manchester, NH</h5>
+<p class="font-headline-md text-[24px] text-on-surface">Great Room Expansion</p>
+</div>
+<div class="group cursor-pointer reveal" style="transition-delay: 200ms;">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container mb-4">
+<img alt="Chef's Kitchen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A professional chef's kitchen featuring a massive industrial stainless steel range and custom cabinetry in a deep navy blue. The counters are a bright white quartz, creating a high-contrast visual impact. The lighting consists of architectural pendant lamps over a wooden breakfast bar. The scene emphasizes precision engineering and luxury material integration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnkD-_HA_eUGYZcWqpHtFkDozsR3xuv67Dz-H3gN5Z4PxcRoucT_od2_2LrwrOV3IKsEDyI2Vz2SR_2roNRh4KCnRuoDnTnxM2DY1zM4UZRIJDYqZ7-y3S5eH79UxfTFEpmyoCYFee6qk9pIBg6e0fpMpinVPs7ntXr3fKP9_qKLkg8fPhmU2JmUl2XRAl01Z1LzIwu3HmGuHcaFYp6tBP4s4UHY2a_UK97Es96RyQqH4H09p-lJIgfCWBa8vBuzxSETtgJSBx5SNd"/>
+</div>
+<h5 class="font-label-md text-label-md uppercase text-on-surface-variant">Amherst, NH</h5>
+<p class="font-headline-md text-[24px] text-on-surface">Culinary Suite</p>
+</div>
+<div class="group cursor-pointer reveal" style="transition-delay: 300ms;">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container mb-4">
+<img alt="Exterior Renovation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A stunning modern exterior home renovation showcasing a combination of dark cedar siding and large glass panels against a twilight sky. Soft exterior lighting accentuates the home's geometric architecture and clean vertical lines. The overall mood is sophisticated and durable, embodying the professional structural authority of a premier general contractor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcrvoJV4u4u1n7yj0VuCylYOTzE0-C719ED5czgluSGYYTyc1V8l500o6Ih3UJV4zqscvNrWaqqprgXoa_wUnRxODRTXcfhb2e3TSgkKns7hEnqOfEjBnTOwpqm7bufEtMrEnpeM-4L21JxXXnlklycESfxWdZ6f4545lLtQsJokMtR_5m7koRoF2JykM09zEED1a4g8KtXwnyJBd7grL_leEjmyGORGWnlMos7pbDJPuc5Sl1NjEwwkMzXUtAd8rshLLgFC3Q9C3m"/>
+</div>
+<h5 class="font-label-md text-label-md uppercase text-on-surface-variant">Nashua, NH</h5>
+<p class="font-headline-md text-[24px] text-on-surface">Modern Façade Reveal</p>
+</div>
+</div>
+</section>
+<!-- Our Process -->
+<section class="py-section-gap px-4 md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 reveal">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background">Your path to a better home.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">Simple, transparent, and completely professional from start to finish.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative">
+<div class="hidden md:block absolute top-1/4 left-0 w-full h-[1px] bg-outline-variant -z-10"></div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm reveal" style="transition-delay: 100ms;">
+<span class="text-display-xl text-primary/10 font-bold block mb-4">01</span>
+<h4 class="font-headline-md text-[24px] mb-2">Consult</h4>
+<p class="font-body-md text-on-surface-variant">We meet at your home to discuss your vision, budget, and project feasibility.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm reveal" style="transition-delay: 200ms;">
+<span class="text-display-xl text-primary/10 font-bold block mb-4">02</span>
+<h4 class="font-headline-md text-[24px] mb-2">Estimate</h4>
+<p class="font-body-md text-on-surface-variant">A comprehensive line-item proposal that ensures you know exactly where every dollar goes.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm reveal" style="transition-delay: 300ms;">
+<span class="text-display-xl text-primary/10 font-bold block mb-4">03</span>
+<h4 class="font-headline-md text-[24px] mb-2">Build</h4>
+<p class="font-body-md text-on-surface-variant">Our crews execute the plan with precision, maintaining a clean site and clear communication.</p>
+</div>
+<div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm reveal" style="transition-delay: 400ms;">
+<span class="text-display-xl text-primary/10 font-bold block mb-4">04</span>
+<h4 class="font-headline-md text-[24px] mb-2">Walkthrough</h4>
+<p class="font-body-md text-on-surface-variant">Final inspection and hand-off to ensure every detail meets our strict quality standards.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap px-4 md:px-margin-desktop">
+<div class="max-w-4xl mx-auto text-center reveal">
+<span class="material-symbols-outlined text-primary text-display-xl mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="relative overflow-hidden min-h-[300px]" id="testimonial-slider">
+<div class="testimonial-item opacity-100 transition-opacity duration-500 absolute inset-0">
+<p class="font-headline-md text-headline-md text-on-background italic">"Image Contracting transformed our dated 80s kitchen into a modern masterpiece. The crew was professional, clean, and finished ahead of schedule. Truly the best experience we've had with a contractor."</p>
+<div class="mt-8">
+<p class="font-label-md text-label-md text-primary uppercase font-bold">Sarah &amp; James Miller</p>
+<p class="font-body-md text-on-surface-variant">Bedford, NH</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Closing CTA Band -->
+<section class="px-4 md:px-margin-desktop py-20 bg-primary text-white rounded-3xl mx-4 md:mx-margin-desktop mb-section-gap reveal">
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center gap-8">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Ready to transform your home?</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl">Don't settle for less than the Image standard. Contact us today for a detailed consultation and free estimate on your next project.</p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="bg-white text-primary px-10 py-5 rounded-xl font-headline-md text-[20px] hover:translate-y-[-4px] transition-all shadow-xl">Get a Free Estimate</button>
+<button class="border-2 border-white/30 text-white px-10 py-5 rounded-xl font-headline-md text-[20px] hover:bg-white/10 transition-all">View Our Work</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container py-section-gap px-4 md:px-margin-desktop border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter w-full max-w-7xl mx-auto">
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="font-display-xl text-headline-md text-on-background uppercase">IMAGE CONTRACTING</div>
+<p class="font-body-md text-on-surface-variant max-w-sm">Premier general contracting and home remodeling services in Southern New Hampshire. Quality you can see, craftsmanship you can trust.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">social_leaderboard</span></a>
+<a class="w-10 h-10 rounded-full bg-white border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">camera</span></a>
+<a class="w-10 h-10 rounded-full bg-white border border-outline-variant flex items-center justify-center hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a>
+</div>
+</div>
+<div class="md:col-span-2 flex flex-col gap-4">
+<h6 class="font-label-md text-label-md text-primary uppercase font-bold">Services</h6>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Residential</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Commercial</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Remodeling</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Kitchens</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Bathrooms</a>
+</nav>
+</div>
+<div class="md:col-span-2 flex flex-col gap-4">
+<h6 class="font-label-md text-label-md text-primary uppercase font-bold">Company</h6>
+<nav class="flex flex-col gap-2">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Reviews</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</nav>
+</div>
+<div class="md:col-span-4 flex flex-col gap-4">
+<h6 class="font-label-md text-label-md text-primary uppercase font-bold">Location</h6>
+<p class="font-body-md text-on-surface-variant">Serving Bedford, Manchester, Amherst, Nashua, and surrounding areas in Southern NH.</p>
+<div class="mt-4 p-6 bg-white rounded-xl border border-outline-variant">
+<p class="font-label-md text-label-md text-on-surface">Available 8am - 5pm, Mon-Fri</p>
+<p class="font-headline-md text-[24px] text-primary">603-716-1522</p>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-outline-variant text-center md:text-left">
+<p class="font-body-md text-on-surface-variant opacity-60">© 2024 Image Contracting. All Rights Reserved. Licensed &amp; Insured (NH License #123456). Serving Bedford, NH and surrounding areas.</p>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for reveal effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Testimonial Switcher Logic
+        const testimonials = [
+            {
+                quote: "\"Image Contracting transformed our dated 80s kitchen into a modern masterpiece. The crew was professional, clean, and finished ahead of schedule. Truly the best experience we've had with a contractor.\"",
+                name: "Sarah & James Miller",
+                location: "Bedford, NH"
+            },
+            {
+                quote: "\"Precision and communication. We always knew what was happening and when. Our new master addition feels like it's always been part of the house. 10/10 would recommend to anyone in Bedford.\"",
+                name: "Robert Chen",
+                location: "Amherst, NH"
+            },
+            {
+                quote: "\"They aren't the cheapest, but they are absolutely the best. The level of finish in our new bathroom is museum-quality. You get what you pay for with Image.\"",
+                name: "Margaret Sullivan",
+                location: "Manchester, NH"
+            }
+        ];
+
+        let currentTestimonial = 0;
+        const container = document.getElementById('testimonial-slider');
+
+        function updateTestimonial() {
+            container.style.opacity = '0';
+            setTimeout(() => {
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                const t = testimonials[currentTestimonial];
+                container.innerHTML = `
+                    <div class="testimonial-item opacity-100 transition-opacity duration-500">
+                        <p class="font-headline-md text-headline-md text-on-background italic">${t.quote}</p>
+                        <div class="mt-8">
+                            <p class="font-label-md text-label-md text-primary uppercase font-bold">${t.name}</p>
+                            <p class="font-body-md text-on-surface-variant">${t.location}</p>
+                        </div>
+                    </div>
+                `;
+                container.style.opacity = '1';
+            }, 500);
+        }
+
+        setInterval(updateTestimonial, 5000);
+    </script>
+</body></html>
